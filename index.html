@@ -3,6 +3,23 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <title>Hey, it's Claire.</title>
+    <style>
+        #index p {
+            opacity: 0;
+            animation: slide-up 1s forwards;
+        }
+
+        @keyframes slide-up {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
